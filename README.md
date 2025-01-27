@@ -1,2 +1,2 @@
-# Paper-rock-scissors-js
-Paper rock scissors game in js
+# Hypnotizing Gambling Game
+Paper rock scissors game in javascript
