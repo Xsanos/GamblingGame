@@ -1,0 +1,121 @@
+:root{
+    --bg-color: rgb(205, 169, 98);
+    --container-color: rgb(74, 131, 69);
+    --border-color: rgb(224, 217, 217);
+    --game-bg-color: rgb(212, 14, 14);
+    --game-button-color: rgb(40, 36, 36);
+    --game-button-shadow: 2px 2px 2px 2px rgb(43, 42, 42);
+    --stake-button-shadow: 2px 2px 2px 2px rgb(43, 42, 42);
+}
+
+html{
+    font-size: 25px;
+}
+body{
+    background-color: var(--bg-color);
+    color: white;
+    font-family: sans-serif;
+}
+#container{
+    background-color: var(--container-color);
+    padding: 20px;
+    border-radius: 15px;
+    border: 3px solid var(--border-color);
+    text-align: center;
+
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#box{
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    background-color: var(--game-bg-color);
+    border: 3px solid var(--border-color);
+    border-radius: 15px;
+}
+#InfoGame, #InfoResult{
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#InfoResult{
+    display: inline-block;
+    width: 100%;
+}
+.InfoItem{
+    display: inline-block;
+    width: calc(100%/3.1);
+}
+#result{
+    color: gold;
+}
+#account{
+    color: aliceblue;
+}
+#wincount{
+    color: aliceblue;
+}
+
+#Paper, #Rock, #Scissors, #Submit{
+    color: white;
+    margin: 10px;
+    padding: 8px;
+    font-size: 100%;
+    background-color: var(--game-button-color);
+    border: 0;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: var(--game-button-shadow);
+}
+input:hover{
+    transform: scale(1.07);
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+#Submit{
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#stakebox{
+    width: 38%;
+    padding: 10px;
+    background-color: var(--game-bg-color);
+    border: 3px solid var(--border-color);
+    font-weight: 600;
+    display: inline-block;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 20px;
+}
+#arrow-l, #arrow-r, #InfoStake{
+    display: inline-block;
+    width: calc(100%/3.5);
+    color: aliceblue;
+}
+#arrow-l, #arrow-r{
+    background-color: var(--game-button-color);
+    box-shadow: var(--stake-button-shadow);
+    border: 0;
+    padding: 0px;
+    font-size: 25px;
+    border-radius: 20px;
+}
