@@ -82,12 +82,6 @@ function play(){
         userpick = ""; 
         computerpick = ""
         result = ""
-
-        // It slows game down, screw this
-        // setTimeout(() => {
-        //     // info.innerHTML = "Choose your weapon!"; It freezes gameplay
-        //     info_result.innerHTML = "";
-        // }, 3000);
     }
     else{
         info.innerHTML = "Choose your weapon!";
